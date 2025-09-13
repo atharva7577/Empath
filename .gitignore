@@ -1,0 +1,58 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+.pnpm-debug.log
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build outputs
+dist/
+build/
+.cache/
+.next/
+out/
+coverage/
+
+# Logs
+*.log
+logs/
+*.pid
+*.seed
+*.pid.lock
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python (for your backend)
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+*.egg-info/
+.env/
+.venv/
+venv/
+.envrc
+
+# Misc
+*.bak
+*.tmp
