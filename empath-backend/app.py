@@ -21,8 +21,8 @@ load_dotenv()
 HF_TOKEN = os.getenv("HF_TOKEN") or os.getenv("HF_API_TOKEN")
 HF_INFERENCE_PROVIDER = os.getenv("HF_INFERENCE_PROVIDER")  # e.g. "featherless-ai"
 DEFAULT_MODEL = os.getenv("DEFAULT_MODEL") or os.getenv("PUBLIC_FALLBACK_MODEL") or "meta-llama/Llama-3.1-8B-Instruct"
-MODEL_MAX_NEW_TOKENS = int(os.getenv("MODEL_MAX_NEW_TOKENS", "512"))
-MODEL_TEMPERATURE = float(os.getenv("MODEL_TEMPERATURE", "0.2"))
+MODEL_MAX_NEW_TOKENS = int(os.getenv("MODEL_MAX_NEW_TOKENS", "250"))
+MODEL_TEMPERATURE = float(os.getenv("MODEL_TEMPERATURE", "0.75"))
 FALLBACK_REPLY = os.getenv("FALLBACK_REPLY", "false").lower() in ("1", "true", "yes")
 DEBUG_MODE = os.getenv("DEBUG", "true").lower() in ("1", "true", "yes")
 LOGFILE = os.getenv("LOGFILE", "server.log")
